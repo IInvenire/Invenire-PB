@@ -1,23 +1,21 @@
-# INVENIRE — Sistema de Achados e Perdidos
+Produto:
 
-## Integrantes
+INVENIRE — Sistema de Achados e Perdidos
 
-- Giovanna
-- Isaac
-- Eduardo
-- Fernando
+O INVENIRE é uma aplicação para ambientes estudantis e corporativos que permite cadastrar, buscar e localizar objetos perdidos ou encontrados.
 
----
+A proposta é substituir ou complementar o modelo tradicional de achados e perdidos físico por uma solução mais organizada, simples e acessível. O produto busca oferecer praticidade, otimização de tempo e aumentar as chances de um item perdido retornar ao seu proprietário. 
 
-## Produto
 
-O **INVENIRE** é uma aplicação voltada a ambientes estudantis e corporativos para cadastrar, buscar e localizar objetos perdidos ou encontrados.
+Integrantes:
 
-A proposta é substituir ou complementar o modelo tradicional de achados e perdidos por uma solução mais organizada, simples e acessível, buscando oferecer praticidade, otimização de tempo e aumentar as chances de um item perdido retornar ao seu proprietário.
+Giovanna
+Isaac
+Eduardo
+Fernando
 
----
 
-## Problema
+Problema
 
 Em universidades e empresas, pessoas frequentemente esquecem ou perdem objetos como garrafas, pendrives, notebooks, documentos e materiais pessoais.
 
@@ -33,63 +31,60 @@ O INVENIRE pretende centralizar essas informações em uma plataforma na qual us
 - entrar em contato quando houver possibilidade de correspondência;
 - confirmar que um objeto foi recuperado.
 
----
+Personas:
 
-## Personas
-
-### Mariana Monteiro — Universitária
+Mariana Monteiro — Universitária
 
 Mariana tem 21 anos, é estudante de Psicologia, esquecida, brincalhona e estudiosa.
 
-**Necessidade principal:** encontrar objetos perdidos com facilidade e gastar o mínimo possível de tempo nesse processo.
+Necessidade principal: encontrar objetos perdidos com facilidade e gastar o mínimo possível de tempo nesse processo.
 
-**Objetivo no INVENIRE:** encontrar rapidamente um objeto perdido na universidade.
+Objetivo no INVENIRE: encontrar rapidamente um objeto perdido na universidade.
 
-### Carlos Silva — Gerente
+ Carlos Silva — Gerente
 
 Carlos tem 38 anos, é casado, pai de um filho e gerente de uma empresa. É ocupado, organizado e preocupado com confiabilidade.
 
-**Necessidade principal:** uma interface simples, notificações e segurança dentro do ambiente corporativo.
+Necessidade principal: uma interface simples, notificações e segurança dentro do ambiente corporativo.
 
-**Objetivo no INVENIRE:** organizar o processo de achados e perdidos da empresa e acompanhar os objetos registrados.
+Objetivo no INVENIRE: organizar o processo de achados e perdidos da empresa e acompanhar os objetos registrados.
 
-### Rafael Gonçalves — Professor
+Rafael Gonçalves — Professor
 
 Rafael tem 32 anos e é professor de Ciência da Computação. É comunicativo, atualizado, paciente e proativo.
 
-**Necessidade principal:** utilizar uma solução rápida e simples, sem interromper sua rotina de trabalho.
+Necessidade principal: utilizar uma solução rápida e simples, sem interromper sua rotina de trabalho.
 
-**Objetivo no INVENIRE:** localizar ou registrar objetos perdidos na universidade.
-
----
-
-## Stakeholders
-
-| Stakeholder | Interesse no produto |
-|---|---|
-| Alunos | Encontrar e devolver objetos dentro da instituição |
-| Professores | Localizar itens perdidos de maneira rápida |
-| Funcionários | Registrar e recuperar objetos no ambiente de trabalho |
-| Gerentes | Organizar e acompanhar achados e perdidos da empresa |
-| Universidade | Melhorar a organização do serviço de achados e perdidos |
-| Empresas | Centralizar objetos perdidos e encontrados |
-| Equipe do projeto | Desenvolver, testar e evoluir o INVENIRE |
+Objetivo no INVENIRE: localizar ou registrar objetos perdidos na universidade.
 
 ---
 
-## Priorização — MoSCoW
+Stakeholders
 
-O backlog foi priorizado com a técnica **MoSCoW**:
+ Stakeholder - Interesse no produto |
+Alunos - Encontrar e devolver objetos dentro da instituição 
+Professores - Localizar itens perdidos de maneira rápida 
+Funcionários - Registrar e recuperar objetos no ambiente de trabalho 
+Gerentes - Organizar e acompanhar achados e perdidos da empresa 
+Universidade - Melhorar a organização do serviço de achados e perdidos 
+Empresas - Centralizar objetos perdidos e encontrados
+Equipe do projeto - Desenvolver, testar e evoluir o INVENIRE 
 
-- **Must Have:** essencial para o MVP funcionar.
-- **Should Have:** importante, mas pode entrar depois do núcleo do MVP.
-- **Could Have:** agrega valor, porém o sistema funciona sem a funcionalidade.
-- **Won't Have Now:** fica fora da primeira versão e pode ser desenvolvido futuramente.
 
-### Backlog
 
-| ID | História | Prioridade | Kanban inicial |
-|---|---|---|---|
+Priorização — MoSCoW
+
+O backlog foi priorizado com a técnica MoSCoW:
+
+- Must Have: essencial para o MVP funcionar.
+- Should Have:importante, mas pode entrar depois do núcleo do MVP.
+- Could Have: agrega valor, porém o sistema funciona sem a funcionalidade.
+- Won't Have Now: fica fora da primeira versão e pode ser desenvolvido futuramente.
+
+Backlog
+
+ ID | História | Prioridade | Kanban inicial |
+
 | US01 | Login de usuário | Must Have | Ready |
 | US02 | Cadastrar item perdido | Must Have | Ready |
 | US03 | Cadastrar item encontrado | Must Have | Ready |
@@ -109,79 +104,26 @@ O backlog foi priorizado com a técnica **MoSCoW**:
 | US17 | QR Code para objetos | Won't Have Now | Backlog |
 | US18 | Lembretes preventivos | Won't Have Now | Backlog |
 
-Cada história está cadastrada individualmente em **Issues**, contendo história de usuário, critérios de aceitação verificáveis, prioridade MoSCoW, persona, status Kanban inicial e Definition of Done.
-
----
-
-## MVP
-
-O MVP do INVENIRE concentra as funcionalidades essenciais para validar o produto:
-
+MVP:
 1. Login de usuário;
 2. Cadastro de item perdido;
 3. Cadastro de item encontrado;
 4. Busca de itens;
 5. Filtros.
 
-Essas funcionalidades permitem validar se os usuários realmente utilizariam uma plataforma centralizada para cadastrar e procurar objetos perdidos e encontrados.
-
----
-
-## Kanban
-
-O desenvolvimento será acompanhado utilizando **Kanban**.
-
-### Fluxo
-
-```text
-Backlog → Ready → In Progress → Review/Test → Done
-                       ↓
-                    Blocked
-```
-
-### Significado dos estados
-
-- **Backlog:** histórias priorizadas, mas ainda não preparadas para desenvolvimento imediato.
-- **Ready:** histórias detalhadas e prontas para serem iniciadas.
-- **In Progress:** trabalho atualmente em desenvolvimento.
-- **Review/Test:** implementação concluída e aguardando revisão ou testes.
-- **Done:** história concluída e validada.
-- **Blocked:** história impedida de avançar por alguma dependência ou problema.
-
-### Limite de WIP
-
-Como a equipe possui quatro integrantes, recomenda-se manter no máximo **4 itens simultaneamente em In Progress**.
-
-O objetivo é evitar iniciar muitas tarefas ao mesmo tempo e aumentar a taxa de conclusão de histórias.
-
----
-
-## Definition of Done
-
-Uma história só deve ser considerada concluída quando:
-
-- [ ] A funcionalidade estiver implementada;
-- [ ] Todos os critérios de aceitação forem atendidos;
-- [ ] Os testes necessários forem realizados;
-- [ ] O código for revisado;
-- [ ] Não houver erro crítico conhecido;
-- [ ] A Issue estiver atualizada e pronta para ser movida para Done.
-
----
-
-## Justificativa técnica
+Justificativa técnica:
 
 O backlog inicial do INVENIRE foi estruturado a partir das informações obtidas durante a Lean Inception realizada pela equipe. O problema central identificado é a dificuldade que estudantes, professores e funcionários enfrentam para localizar objetos perdidos dentro de ambientes como universidades e empresas. Atualmente, esse processo pode depender de comunicação informal, procura presencial ou de sistemas de achados e perdidos pouco organizados. Dessa maneira, o INVENIRE busca centralizar as informações referentes a objetos perdidos e encontrados e tornar o processo de recuperação mais simples e eficiente.
 
 Durante a Lean Inception, foram identificadas três personas principais: Mariana Monteiro, uma estudante universitária que necessita encontrar seus objetos rapidamente; Carlos Silva, um gerente interessado em organizar os objetos perdidos dentro de uma empresa; e Rafael Gonçalves, professor universitário que necessita de uma solução simples e rápida durante sua rotina de trabalho. Essas personas foram utilizadas como base para a criação das histórias de usuário, de forma que cada funcionalidade esteja ligada a uma necessidade concreta identificada no projeto.
 
-Para organizar o backlog foi utilizada a técnica **MoSCoW**, dividindo as histórias entre Must Have, Should Have, Could Have e Won't Have Now. Essa abordagem foi escolhida porque permite diferenciar aquilo que é indispensável para validar a proposta do produto das funcionalidades que podem ser incorporadas posteriormente. Essa divisão é particularmente importante para evitar que o primeiro ciclo de desenvolvimento tenha um escopo excessivamente grande.
+Para organizar o backlog foi utilizada a técnica MoSCoW, dividindo as histórias entre Must Have, Should Have, Could Have e Won't Have Now. Essa abordagem foi escolhida porque permite diferenciar aquilo que é indispensável para validar a proposta do produto das funcionalidades que podem ser incorporadas posteriormente. Essa divisão é particularmente importante para evitar que o primeiro ciclo de desenvolvimento tenha um escopo excessivamente grande.
 
-As funcionalidades classificadas como **Must Have** representam o núcleo do INVENIRE: autenticação, cadastro de objetos e mecanismos de busca e filtragem. Essa decisão segue o Canvas MVP desenvolvido pela equipe, que estabelece login, cadastro de item e busca/filtro como funcionalidades da primeira onda. O objetivo dessa versão inicial é oferecer um canal simples para cadastrar, buscar e encontrar itens e, principalmente, validar se as pessoas realmente utilizariam uma plataforma desse tipo para reconectar proprietários e objetos.
+As funcionalidades classificadas como Must Have representam o núcleo do INVENIRE: autenticação, cadastro de objetos e mecanismos de busca e filtragem. Essa decisão segue o Canvas MVP desenvolvido pela equipe, que estabelece login, cadastro de item e busca/filtro como funcionalidades da primeira onda. O objetivo dessa versão inicial é oferecer um canal simples para cadastrar, buscar e encontrar itens e, principalmente, validar se as pessoas realmente utilizariam uma plataforma desse tipo para reconectar proprietários e objetos.
 
 O MVP também permite validar hipóteses importantes sem desenvolver antecipadamente funcionalidades tecnicamente mais complexas. O número de itens cadastrados permite avaliar se existe demanda pelo serviço; a quantidade de pesquisas ajuda a verificar se os usuários realmente utilizam o mecanismo de busca; e a ocorrência de itens recuperados permite observar se a proposta de valor central do INVENIRE está funcionando.
 
-Funcionalidades como histórico, marcação de item recuperado, chat e notificações foram classificadas como **Should Have**. Elas têm valor significativo para a experiência do usuário, mas podem ser desenvolvidas depois que o fluxo principal de cadastro e busca estiver validado. O chat, por exemplo, facilita a comunicação entre quem encontrou o objeto e seu possível proprietário, enquanto a marcação de item recuperado permite encerrar corretamente uma ocorrência.
+Funcionalidades como histórico, marcação de item recuperado, chat e notificações foram classificadas como Should Have. Elas têm valor significativo para a experiência do usuário, mas podem ser desenvolvidas depois que o fluxo principal de cadastro e busca estiver validado. O chat, por exemplo, facilita a comunicação entre quem encontrou o objeto e seu possível proprietário, enquanto a marcação de item recuperado permite encerrar corretamente uma ocorrência.
 
 O **match automático** foi classificado como Could Have porque possui grande potencial de valor, mas exige uma lógica de comparação mais sofisticada. Características como nome, categoria, cor, local, descrição e data podem ser utilizadas para calcular possíveis correspondências. Entretanto, desenvolver essa funcionalidade antes de existir uma quantidade relevante de itens cadastrados aumentaria a complexidade inicial sem garantir que a hipótese principal do produto já tenha sido validada.
 
@@ -189,21 +131,8 @@ Recursos voltados especificamente para ambientes empresariais, como painel geren
 
 Outra preocupação presente nas decisões é a segurança das informações. O produto não deve divulgar informações pessoais sem autorização e não deve permitir publicações sem identificação. Também é importante deixar claro que o sistema não garante que todos os objetos serão recuperados e não substitui a entrega física dos itens. Esses pontos ajudam a definir os limites do produto e evitar expectativas incorretas sobre seu funcionamento.
 
-Para gerenciar o desenvolvimento será utilizado **Kanban por meio do GitHub**. As histórias começam no Backlog, passam para Ready quando possuem informações suficientes para desenvolvimento, depois seguem para In Progress, Review/Test e finalmente Done. Caso exista algum impedimento, a história poderá receber o status Blocked. A limitação de trabalho em andamento evita que a equipe inicie diversas funcionalidades simultaneamente e favorece a conclusão contínua dos itens mais importantes.
+Para gerenciar o desenvolvimento será utilizado Kanban por meio do GitHub. As histórias começam no Backlog, passam para Ready quando possuem informações suficientes para desenvolvimento, depois seguem para In Progress, Review/Test e finalmente Done. Caso exista algum impedimento, a história poderá receber o status Blocked. A limitação de trabalho em andamento evita que a equipe inicie diversas funcionalidades simultaneamente e favorece a conclusão contínua dos itens mais importantes.
 
-Dessa forma, a combinação entre **Lean Inception, backlog de histórias de usuário, priorização MoSCoW e gestão visual por Kanban** permite que o grupo mantenha o desenvolvimento orientado às necessidades dos usuários. A estratégia busca inicialmente validar o problema e a proposta de valor do INVENIRE com o menor conjunto possível de funcionalidades e, com base nos resultados obtidos, evoluir posteriormente para recursos mais avançados.
+Dessa forma, a combinação entre Lean Inception, backlog de histórias de usuário, priorização MoSCoW e gestão visual por Kanban permite que o grupo mantenha o desenvolvimento orientado às necessidades dos usuários. A estratégia busca inicialmente validar o problema e a proposta de valor do INVENIRE com o menor conjunto possível de funcionalidades e, com base nos resultados obtidos, evoluir posteriormente para recursos mais avançados.
 
----
 
-## Checklist da entrega
-
-- [x] Produto e problema claramente definidos
-- [x] Personas identificadas
-- [x] Stakeholders identificados
-- [x] Backlog com pelo menos 15 histórias
-- [x] Todas as histórias possuem critérios de aceitação
-- [x] Histórias priorizadas
-- [x] Técnica MoSCoW identificada
-- [x] Metodologia Kanban definida
-- [x] Justificativa técnica incluída
-- [ ] Revisão final pelo grupo antes do envio
