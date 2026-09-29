@@ -1,0 +1,36 @@
+Justificativa técnica das decisões
+A definição inicial do INVENIRE foi realizada considerando o problema identificado durante a elaboração do projeto: a dificuldade de conectar pessoas que perderam objetos com aquelas que os encontraram. A partir dessa necessidade, decidiu-se desenvolver uma plataforma que concentre as informações relacionadas aos objetos perdidos e encontrados e permita que elas sejam pesquisadas de maneira rápida e organizada.
+
+Uma das principais decisões do projeto foi manter o primeiro produto o mais simples possível. Em vez de desenvolver todas as funcionalidades imaginadas pela equipe desde a primeira versão, o projeto deve inicialmente validar se os usuários realmente utilizarão uma plataforma digital para cadastrar e procurar objetos. Essa estratégia reduz a complexidade técnica inicial e permite avaliar a proposta do INVENIRE antes de investir tempo em recursos mais avançados.
+
+Por esse motivo, funcionalidades como login, cadastro de objetos, busca e filtros foram consideradas parte fundamental do MVP, ou Produto Mínimo Viável. Esses recursos formam o fluxo básico necessário para o funcionamento da solução. O usuário precisa se identificar no sistema, cadastrar um objeto perdido ou encontrado e conseguir consultar os registros realizados por outros usuários.
+
+A autenticação foi considerada importante porque permite associar cada registro a um usuário identificado. Essa decisão também ajuda a aumentar a segurança da plataforma e reduz a possibilidade de publicações completamente anônimas. Além disso, a identificação do usuário é necessária para futuras funcionalidades, como histórico de objetos, chat, notificações e confirmação de recuperação.
+
+O cadastro de objetos é outra funcionalidade central. Para que o sistema consiga criar uma base de informações útil, os usuários precisam fornecer características que permitam diferenciar os itens. Dados como nome, categoria, descrição, local e data ajudam durante a pesquisa e poderão ser utilizados futuramente por mecanismos automáticos de correspondência.
+
+A possibilidade de utilizar uma fotografia também possui valor para a experiência do usuário, pois características visuais podem facilitar a identificação de um objeto. Entretanto, a plataforma não deve depender exclusivamente da imagem, permitindo que um registro continue sendo realizado quando o usuário não possuir uma fotografia.
+
+Os mecanismos de busca e filtragem foram priorizados porque representam a principal forma de localizar informações dentro da plataforma. Conforme o número de objetos cadastrados aumenta, visualizar todos os registros se torna pouco eficiente. Dessa forma, filtros de categoria, localização, data e situação do objeto permitem diminuir os resultados e facilitar a localização do item desejado.
+
+Outras funcionalidades foram consideradas importantes, mas não necessariamente obrigatórias para a primeira versão. Entre elas estão histórico de itens, chat entre usuários, notificações, marcação de objeto como recuperado, correspondência automática entre objetos, avaliações, relatórios e recursos voltados para empresas.
+
+A decisão de implementar esses recursos gradualmente está relacionada principalmente ao esforço técnico e à necessidade de validar primeiramente o funcionamento básico da aplicação. Um sistema de chat, por exemplo, exige armazenamento e gerenciamento de mensagens, controle de acesso e preocupações adicionais relacionadas à privacidade. Portanto, apesar de oferecer valor ao usuário, não é indispensável para comprovar inicialmente que pessoas utilizarão o INVENIRE para cadastrar e pesquisar objetos.
+
+O mecanismo de correspondência automática, ou match, também foi considerado uma funcionalidade para uma etapa posterior. Esse recurso poderá comparar características de objetos perdidos e encontrados, considerando informações como categoria, descrição, cor, localização e data para sugerir possíveis correspondências. Entretanto, desenvolver um sistema desse tipo antes da existência de uma base significativa de objetos cadastrados poderia aumentar a complexidade do projeto sem produzir benefício suficiente na primeira versão.
+
+Outro aspecto considerado nas decisões é a privacidade. Como o sistema poderá armazenar informações relacionadas a usuários e suas ocorrências, devem ser evitadas exposições desnecessárias de dados pessoais. O objetivo é permitir que os usuários consigam se comunicar e recuperar os objetos sem que informações pessoais sejam divulgadas publicamente sem necessidade.
+
+Para organizar o desenvolvimento, será utilizada a abordagem Kanban por meio do GitHub Projects. O Kanban foi escolhido porque permite visualizar facilmente o andamento de cada atividade do projeto. As histórias de usuário poderão passar por etapas como Backlog, Ready, In Progress, Review/Test e Done.
+
+Essa estrutura possibilita que toda a equipe visualize quais funcionalidades ainda precisam ser desenvolvidas, quais já estão em execução e quais foram concluídas. Também contribui para evitar que muitos itens sejam iniciados simultaneamente sem que os anteriores tenham sido finalizados.
+
+Em conjunto com o Kanban, o backlog utiliza a técnica de priorização MoSCoW, dividindo as funcionalidades entre Must Have, Should Have, Could Have e Won’t Have Now. As funcionalidades classificadas como Must Have representam aquelas indispensáveis para o funcionamento da primeira versão. Should Have representa recursos importantes, mas que podem ser implementados após o fluxo principal. Could Have reúne melhorias que agregam valor, mas não impedem o funcionamento do produto caso ainda não estejam disponíveis. Won’t Have Now representa funcionalidades que foram consideradas válidas, porém permanecerão fora do escopo da versão atual.
+
+A utilização conjunta de Kanban e MoSCoW permite separar dois aspectos diferentes do projeto. O MoSCoW determina a importância e a prioridade de uma história de usuário, enquanto o Kanban demonstra em qual etapa do processo de desenvolvimento aquela história se encontra.
+
+Essa organização também facilita a divisão de trabalho entre os integrantes e torna o acompanhamento do projeto mais transparente. No GitHub Projects, cada história de usuário poderá ser representada por uma Issue e receber informações como responsável, prioridade, persona relacionada, critérios de aceitação e status no Kanban.
+
+Por fim, as decisões técnicas foram tomadas com o objetivo de evitar um escopo inicial excessivamente grande e permitir que o INVENIRE evolua progressivamente. Primeiramente, será validado o fluxo essencial de autenticação, cadastro e busca de objetos. Depois que esse fluxo estiver funcionando e sendo testado pelos usuários, poderão ser incorporadas funcionalidades mais avançadas.
+
+Dessa forma, a estratégia adotada permite desenvolver uma primeira versão funcional com menor complexidade, testar a proposta de valor do produto e utilizar os resultados obtidos para orientar as próximas etapas do desenvolvimento. O INVENIRE poderá, assim, evoluir de acordo com necessidades reais observadas durante seu uso, mantendo o desenvolvimento centrado no usuário e no problema que o sistema pretende solucionar.
