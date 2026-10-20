@@ -1,6 +1,6 @@
 # INVENIRE — Requisitos não funcionais e arquitetura
 
-[Baixar documento Word](RNFs_e_Arquitetura_Projeto.docx)
+
 
 Sistema digital de achados e perdidos • UNICAP
 Grupo: Ivenire
@@ -28,7 +28,7 @@ As metas quantitativas são propostas de aceite para validação pela equipe. Os
 | US07 / #7 | Como proprietário, quero marcar meu item como recuperado. | Should Have |
 | US08 / #8 | Como usuário, quero visualizar meu histórico de objetos. | Should Have |
 
-Fonte: https://github.com/IInvenire/Invenire-PB/issues — os números das Issues correspondem aos IDs acima. As descrições são resumos das histórias existentes.
+
 
 ## 3. RNFs de desempenho e segurança
 
@@ -211,7 +211,4 @@ US02 e US03 → RNF-06 e RNF-07 → DA-05: cadastrar objetos de forma simples ex
 
 A equipe deverá aprovar metas, política de visibilidade dos itens e autorização da US07, executar testes e registrar por RNF: ambiente, data, responsável, resultado e evidência. Falhas devem gerar ajustes na implementação ou revisão justificada das metas. Um integrante realizará o envio do material completo.
 
-## 10. Referências do projeto
 
-Repositório: https://github.com/IInvenire/Invenire-PB
-Branch consultada: product-backlog. Documentos: .docs.md/produto.md, .docs.md/justificativa_tecnica.md e .docs.md/persona.md. Histórias: Issues #1 a #8. Consulta: 19/10/2026.
